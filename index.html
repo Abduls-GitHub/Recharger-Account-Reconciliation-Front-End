@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="./RECHARGER_LOGO_80X80_38c55a1a-daa6-4288-a091-6754ae06bcdc_x40.avif">
+
+<head>
+
+    <!--Font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+          rel="stylesheet">
+
+    <!--Icons-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recharger | Prepaid Electricity</title>
+</head>
+<body>
+
+<div class="grid-container">
+
+    <header class="header">
+
+        <p id="header-title">
+            Account Reconciliation
+        </p>
+
+        <div class="header-right">
+            <i class="material-icons-outlined" id="account-icon">account_circle</i>
+            <p id="account-title">Account</p>
+        </div>
+    </header>
+
+    <aside class="side-bar">
+        <img id="logo" src="./Recharger-logo_1_200x.avif" alt="" width=150px height=40px>
+
+        <ul class="side-bar-list">
+            <li class="side-bar-list-item">
+                <span class="material-icons-outlined" id="calculate-icon">calculate</span> Reconciliation
+            </li>
+            <li class="side-bar-list-item">
+                <span class="material-icons-outlined" id="history-icon">history</span> History
+            </li>
+            <li class="side-bar-list-item">
+                <span class="material-icons-outlined" id="logout-icon">logout</span> Logout
+            </li>
+            <li class="side-bar-list-item">
+            <span class="material-icons-outlined" id="close-icon">close</span> Close
+            </li>
+
+        </ul>
+    </aside>
+
+    <div class="main-container">
+
+        <div class="filters-container">
+            <form class="db-query-form">
+
+                <div class="recon" id="recon-container">
+                    <label for="recon-number">Reconciliation Number:</label>
+                    <input type="text" id="recon-number">
+                </div>
+
+                <br>
+
+                <div class="recon" id="dates-container">
+                    <p>Reconciliation Date Range</p>
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" value="2022/01/31">
+
+                    <br>
+                    <br>
+
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" value="2023/01/31"></div>
+
+                <br>
+
+                <div class="recon" id="partners-container">
+                    <p>Partner File Selection</p>
+                    <label for="partner-files" id="partner-files-label">All Partner Files:</label>
+                    <input type="checkbox" id="partner-files">
+                </div>
+
+                <br>
+
+                <div class="recon" id="actions-container">
+                    <p>Internal Action</p>
+                    <label for="frontend-sales">Front End Sales:</label>
+                    <input type="checkbox" id="frontend-sales">
+
+                    <br>
+
+                    <label for="rollbacks">Rollbacks:</label>
+                    <input type="checkbox" id="rollbacks">
+
+                    <br>
+
+
+                    <label for="reprints">Reprints:</label>
+                    <input type="checkbox" id="reprints">
+                </div>
+
+                <br>
+
+                <div class="recon" id="biztalk-container">
+                    <p>BizTalk Sales</p>
+                    <label for="biztalk">Source Biztalk:</label>
+                    <input type="checkbox" id="biztalk">
+                </div>
+
+                <br>
+
+                <div class="recon">
+                    <input id="internal-submit" type="submit" value="Process Internal Sales">
+
+                    <input id="external-submit" type="submit" value="Process External Sales">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="right-container">
+
+        <div class="results">
+            <div class="internal-results">
+                <p>Internal Results</p>
+            </div>
+
+            <div class="external-results">
+                <p>External Results</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
